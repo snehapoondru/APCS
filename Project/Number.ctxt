@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=length
+comment0.target=Number(int)
+comment0.text=\n\ Constructor\ that\ creates\ a\ random\ number\n\ of\ the\ specified\ length\n
+comment1.params=
+comment1.target=java.lang.String\ getSecretNumber()
+comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @return\ the\ secretNumber\n
+numComments=2
