@@ -3,7 +3,7 @@
  * Write a description of class Project here.
  * 
  * @author (Sneha) 
- * @version (5/14/15)
+ * @version (5/19/15)
  */
 public class Number
 {
@@ -28,14 +28,13 @@ public class Number
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
+     * getter method
      * @return the secretNumber
      */
     public String getSecretNumber()
     {
         return secretNumber;
-    }
+    } 
     
     /**
      * @return how many numbers in the guess are in the 
@@ -66,5 +65,16 @@ public class Number
                 ctr++;  
         }
         return ctr; 
+    }
+    
+    /**
+     * @return true or false depending on
+     * whether the guess is correct or not
+     */
+    public boolean isCorrect()
+    {
+        if (numberOfPositionsCorrect() != secretNumber.length())
+            return false;
+        return true; 
     }
 }
