@@ -81,4 +81,13 @@ public class Number
             return false;
         return true; 
     }
+    
+    public String hint()
+    {
+        String hint = ""; 
+        int position = (int) Math.random()*secretNumber.length();
+        String numberAtPosition = secretNumber.substring(position, position + 1);
+        hint += "The number at " + position + "is " + numberAtPosition; 
+        return hint; 
+    }
 }
