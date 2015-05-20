@@ -44,7 +44,7 @@ public class Number
      * @return how many numbers in the guess are in the 
      * correct position
      */
-    public int numberOfPositionsCorrect()
+    public int numberOfPositionsCorrect() 
     {
         int ctr = 0; 
         for (int i = 0; i < guess.length(); i++)

@@ -1,9 +1,9 @@
 
 /**
- * Abstract class Hangman - write a description of the class here
+ * Abstract class Hangman - main Hangman design
  * 
  * @author (Sneha)
- * @version (5/15/15)
+ * @version (5/20/15)
  */
 public abstract class Hangman
 {
