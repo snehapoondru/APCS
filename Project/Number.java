@@ -22,6 +22,10 @@ public class Number
         }
     }
     
+    /**
+     * Constructor that assigns the parameter
+     * to the instance variable guess
+     */
     public Number(String g)
     {
         guess = g;

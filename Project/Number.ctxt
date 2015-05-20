@@ -4,6 +4,7 @@ comment0.target=Number(int)
 comment0.text=\n\ Constructor\ that\ creates\ a\ random\ number\n\ of\ the\ specified\ length\n
 comment1.params=g
 comment1.target=Number(java.lang.String)
+comment1.text=\n\ Constructor\ that\ assigns\ the\ parameter\n\ to\ the\ instance\ variable\ guess\n
 comment2.params=
 comment2.target=java.lang.String\ getSecretNumber()
 comment2.text=\n\ getter\ method\n\ @return\ the\ secretNumber\n
