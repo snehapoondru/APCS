@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Project here.
+ * Number Guessing Hangman Game
  * 
  * @author (Sneha) 
- * @version (5/19/15)
+ * @version (5/21/15)
  */
 public class Number
 {
@@ -82,6 +82,10 @@ public class Number
         return true; 
     }
     
+    /**
+     * @return a hint that gives the player a 
+     * free number at it's correct location
+     */
     public String hint()
     {
         String hint = ""; 

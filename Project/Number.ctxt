@@ -19,4 +19,5 @@ comment5.target=boolean\ isCorrect()
 comment5.text=\n\ @return\ true\ or\ false\ depending\ on\n\ whether\ the\ guess\ is\ correct\ or\ not\n
 comment6.params=
 comment6.target=java.lang.String\ hint()
+comment6.text=\n\ @return\ a\ hint\ that\ gives\ the\ player\ a\ \n\ free\ number\ at\ it's\ correct\ location\n
 numComments=7
