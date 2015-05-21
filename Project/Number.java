@@ -87,7 +87,7 @@ public class Number
         String hint = ""; 
         int position = (int) Math.random()*secretNumber.length();
         String numberAtPosition = secretNumber.substring(position, position + 1);
-        hint += "The number at " + position + "is " + numberAtPosition; 
+        hint += "The number at " + position + "is " + numberAtPosition + " ."; 
         return hint; 
     }
 }
