@@ -3,7 +3,7 @@
  * Abstract class Hangman - main Hangman design
  * 
  * @author (Sneha)
- * @version (5/20/15)
+ * @version (5/21/15)
  */
 public abstract class Hangman
 {

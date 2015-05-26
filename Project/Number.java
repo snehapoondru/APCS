@@ -8,8 +8,9 @@
 public class Number
 {
     private String secretNumber = "";
-    private String guess = ""; 
-
+    private String guess = "";
+    private int numOfHints;
+    private int allowedNumOfHints;
     /**
      * Constructor that creates a random number
      * of the specified length
@@ -20,8 +21,15 @@ public class Number
         {
             secretNumber += (int) (Math.random()*10);
         }
+        if (length <= 3)
+            allowedNumOfHints = 1;
+        else if (length <= 5)
+            allowedNumOfHints = 3; 
+        else if (length <= 7)
+            allowedNumOfHints = 5;
+        numOfHints = 0; 
     }
-    
+
     /**
      * Constructor that assigns the parameter
      * to the instance variable guess
@@ -33,13 +41,18 @@ public class Number
 
     /**
      * getter method
-     * @return the secretNumber
+     * @return the numOfHints
      */
-    public String getSecretNumber()
+    public int getNumOfHints()
     {
-        return secretNumber;
+        return numOfHints;
     } 
     
+    public String getSecretNumber()
+    {
+        return secretNumber; 
+    }
+
     /**
      * @return how many numbers in the guess are in the 
      * correct position
@@ -54,7 +67,7 @@ public class Number
         }
         return ctr; 
     }
-    
+
     /**
      * @return how many numbers in the guess are
      * in the secret number, but not necessarily in
@@ -70,7 +83,7 @@ public class Number
         }
         return ctr; 
     }
-    
+
     /**
      * @return true or false depending on
      * whether the guess is correct or not
@@ -81,17 +94,23 @@ public class Number
             return false;
         return true; 
     }
-    
+
     /**
      * @return a hint that gives the player a 
      * free number at it's correct location
      */
     public String hint()
     {
-        String hint = ""; 
-        int position = (int) Math.random()*secretNumber.length();
-        String numberAtPosition = secretNumber.substring(position, position + 1);
-        hint += "The number at " + position + "is " + numberAtPosition + " ."; 
-        return hint; 
+        if (numOfHints <= allowedNumOfHints)
+        {
+            String hint = "";  
+            int position = (int) Math.random()*secretNumber.length();
+            String numberAtPosition = secretNumber.substring(position, position + 1);
+            hint += "The number at position " + position + " is " + numberAtPosition + " .";
+            return hint;
+            numOfHints++;     
+        }
+        else 
+            return "No more hints left!";
     }
 }
