@@ -48,9 +48,19 @@ public class Number
         return numOfHints;
     } 
     
+    public void setNumOfHints()
+    {
+        numOfHints++;
+    }
+    
     public String getSecretNumber()
     {
         return secretNumber; 
+    }
+    
+    public int getAllowedNumOfHints()
+    {
+        return allowedNumOfHints; 
     }
 
     /**
@@ -107,8 +117,8 @@ public class Number
             int position = (int) Math.random()*secretNumber.length();
             String numberAtPosition = secretNumber.substring(position, position + 1);
             hint += "The number at position " + position + " is " + numberAtPosition + " .";
+            numOfHints++;
             return hint;
-            numOfHints++;     
         }
         else 
             return "No more hints left!";
