@@ -39,10 +39,6 @@ public class Number
         guess = g;
     }
 
-    /**
-     * getter method
-     * @return the numOfHints
-     */
     public int getNumOfHints()
     {
         return numOfHints;
@@ -52,12 +48,12 @@ public class Number
     {
         numOfHints++;
     }
-    
+
     public String getSecretNumber()
     {
         return secretNumber; 
     }
-    
+
     public int getAllowedNumOfHints()
     {
         return allowedNumOfHints; 
