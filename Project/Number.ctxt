@@ -7,7 +7,6 @@ comment1.target=Number(java.lang.String)
 comment1.text=\n\ Constructor\ that\ assigns\ the\ parameter\n\ to\ the\ instance\ variable\ guess\n
 comment2.params=
 comment2.target=int\ getNumOfHints()
-comment2.text=\n\ getter\ method\n\ @return\ the\ numOfHints\n
 comment3.params=
 comment3.target=void\ setNumOfHints()
 comment4.params=
