@@ -30,6 +30,10 @@ public class Guess extends Number
             if (g.substring(i,i+1) == getSecretNumber().substring(i,i+1))
                 ctr++; 
         }
+        
+        if (numberOfPositionsCorrect() == getSecretNumber().length())
+             System.out.println("Yay! You've guessed the secret number: " + getSecretNumber()); 
+        
         return ctr; 
     }
 
@@ -71,9 +75,9 @@ public class Guess extends Number
             String hint = "";  
             int position = (int) Math.random()*getSecretNumber().length();
             String numberAtPosition = getSecretNumber().substring(position, position + 1);
-            hint += "The number at position " + position + " is " + numberAtPosition + " .";
+            hint += "The number at position " + (position + 1) + " is " + numberAtPosition + " .";
             setNumOfHints();  
-            return hint; 
+            return hint;
         }
         else 
             return "No more hints left!"; 
